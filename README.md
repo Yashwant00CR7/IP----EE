@@ -4,6 +4,7 @@ A dynamic PHP-based web application that fetches **GitHub user profiles** and th
 
 This project showcases API integration, data rendering, and document generation — ideal for developers looking to learn PHP and GitHub API usage.
 
+**[Click Here](https://github-project-explorer.infinityfreeapp.com/?i=1)**
 ---
 
 ## 🧰 Tech Stack
