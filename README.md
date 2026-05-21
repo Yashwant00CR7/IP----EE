@@ -1,33 +1,76 @@
-# 👤 GitHub Profile Fetcher & PDF Exporter using PHP
+# 👤 GitHub Profile Fetcher & PDF Exporter
 
-A dynamic PHP-based web application that fetches **GitHub user profiles** and their **public repositories**, with an option to **export the results as a PDF** using `dompdf`.
+A PHP web app that fetches GitHub user profiles and their public repositories, with one-click PDF export using `dompdf`.
 
-This project showcases API integration, data rendering, and document generation — ideal for developers looking to learn PHP and GitHub API usage.
+**[Try it live →](https://github-project-explorer.infinityfreeapp.com/?i=1)**
 
-**[Click Here](https://github-project-explorer.infinityfreeapp.com/?i=1)**
 ---
 
 ## 🧰 Tech Stack
 
-- **Frontend**: HTML, CSS (with PHP)
 - **Backend**: PHP
 - **API**: GitHub REST API v3
-- **PDF Generator**: [dompdf](https://github.com/dompdf/dompdf)
-- **Hosting**: Heroku (based on `Procfile`)
-- **Database (Optional)**: `db.php` included, suggest MySQL for user logging (if used)
+- **PDF**: [dompdf](https://github.com/dompdf/dompdf)
+- **Frontend**: HTML + CSS
+- **Hosting**: Heroku
+
+---
+
+## ✨ Features
+
+- Search any GitHub username and view their public profile
+- Lists all public repositories with metadata
+- Export the full profile + repo list as a formatted PDF
+- Optional MySQL logging via `db.php`
+
+---
+
+## 🚀 Setup
+
+### Prerequisites
+- PHP 7.4+
+- Composer
+
+### Installation
+
+```bash
+git clone https://github.com/Yashwant00CR7/IP----EE.git
+cd IP----EE
+composer install
+```
+
+Configure your GitHub token (optional, increases API rate limit):
+```bash
+cp .env.example .env
+# Add GITHUB_TOKEN=your_token to .env
+```
+
+Run locally:
+```bash
+php -S localhost:8000
+```
+
+Open `http://localhost:8000`.
 
 ---
 
 ## 📁 Project Structure
 
-```bash
-.
-├── index.php          # Main page for searching GitHub users
-├── export_pdf.php     # Generates PDF using dompdf
-├── db.php             # (Optional) DB connection (e.g., for logs)
-├── .env               # Environment variables (e.g., DB credentials)
-├── .gitignore         # Files to ignore in Git
-├── Procfile           # For Heroku deployment
-├── requirements.txt   # Required libraries for deployment
-├── app.py             # Unused? Possibly for future Python integration
-└── README.md
+```
+├── index.php          # Main search page
+├── export_pdf.php     # PDF generation via dompdf
+├── db.php             # Optional MySQL connection
+├── .env               # Environment variables
+├── Procfile           # Heroku deployment config
+└── requirements.txt   # Deployment dependencies
+```
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+**Built by [Yashwant K](https://github.com/Yashwant00CR7)**
